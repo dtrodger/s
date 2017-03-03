@@ -1,0 +1,36 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contract_policies.css') }}" />
+{% endblock %}
+
+{% block content %}
+{% include 'main/partials/policy_certificates.html' %}
+<div class="col-sm-7 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		<div style="margin-top:20px;">
+			<p align="center" style="font-size:120%;">Sexual Harassment Policies</p>			
+			<font size="2">			
+				<p>Sexual harassment is a form of sex discrimination that violates<a style="text-decoration: underline; text-underline: single" href="http://www.eeoc.gov/laws/vii.html"> Title VII of the Civil Rights Act of 1964</a>.</p>
+				<p>Unwelcome sexual advances, requests for sexual favors, and other verbal or physical conduct of a sexual nature constitutes sexual harassment when submission to or rejection of this conduct explicitly or implicitly affects an individual's employment, unreasonably interferes with an individual's work performance or creates an intimidating, hostile or offensive work environment.</p>
+				<p>Sexual harassment can occur in a variety of circumstances, including but not limited to the following:</p>
+				<p>The victim as well as the harasser may be a woman or a man. The victim does not have to be of the opposite sex.</p>
+				<p>The harasser can be the victim's supervisor, an agent of the employer, a supervisor in another area, a co-worker, or a non-employee.</p>
+				<p>The victim does not have to be the person harassed but could be anyone affected by the offensive conduct.</p>
+				<p>Unlawful sexual harassment may occur without economic injury to or discharge of the victim.</p>
+				<p>The harasser's conduct must be unwelcome.</p>
+				<p class="MsoNormal">It is helpful for the victim to directly inform the harasser that the conduct is unwelcome and must stop. The victim should use any employer complaint mechanism or grievance system available.</p>
+				<p>When investigating allegations of sexual harassment, EEOC looks at the whole record: the circumstances, such as the nature of the sexual advances, and the context in which the alleged incidents occurred. A determination on the allegations is made from the facts on a case-by-case basis.</p>
+				<p>Prevention is the best tool to eliminate sexual harassment in the workplace. Employers are encouraged to take steps necessary to prevent sexual harassment from occurring. They should clearly communicate to employees that sexual harassment will not be tolerated. They can do so by establishing an effective complaint or grievance process and taking immediate.</p>
+				<p>Signature:</p>
+				<br>
+				<img border=0 width=192 height=62 src="{{ url_for('static', filename='images/contract/sr_signature.png') }}">
+				<br>
+				<p>Scott Rodgers
+				<br>
+				<p>President, Stuart-Rodgers Ltd.</p>
+			</font>
+		</div>
+	</div>
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}

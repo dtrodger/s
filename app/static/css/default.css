@@ -1,0 +1,57 @@
+
+body {
+	font-family:tahoma;
+	font-size:13px;
+}
+
+h1 {
+    font-size:170%;
+}
+
+h2 {
+    font-size:140%;
+}
+
+.nav a:link {text-decoration: none!important;color:#808080;}
+
+a:link {text-decoration: none!important;}
+.nav a:visited {text-decoration: none!important;color:#808080;}
+.nav a:active {text-decoration: none!important;color:#808080; }
+.nav a:hover {text-decoration: none!important;color:#808080;}
+.nav a:focus {text-decoration: none!important;color:#808080;}
+
+/*.dropdown-nav-item {
+    font-size: .9em;
+}
+
+/*.navbar-brand,
+.navbar-nav li a {
+    line-height: 160px;
+    height: 100px;
+    padding-top: 0;
+}*/
+
+/*.navbar-nav li a {
+    line-height: 80px;
+    height: 60px;
+}*/
+
+.navbar-custom {
+    background-color:#FFF;
+    color:black;
+    border-radius:0;
+}
+
+/*.dropdown-nav-item {
+	line-height: 50px!important;
+    height: 50px!important;
+}*/
+
+.dropdown-menu li:hover {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+*/

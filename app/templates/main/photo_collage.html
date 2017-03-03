@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<main class="text-center">
+<h1>Photo Collage Examples</h1>
+<section class="row">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-4 col-xs-12">
+			<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/A_2_186334.jpg') }}">
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/B_2_186048.jpg') }}">
+		</div>		
+		<div class="col-sm-4 col-xs-12">
+			<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/c_3_182493.jpg') }}">
+		</div>
+	</div>
+</section>
+<section class="row well welld">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-4 col-xs-12">
+		<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/D_3_184710.jpg') }}">
+		</div>
+		<div class="col-sm-4 col-xs-12">
+		<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/guy.jpg') }}">
+		</div>
+		<div class="col-sm-4 col-xs-12">
+		<img class="img-3" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/J_4_185759.jpg') }}">
+		</div>
+	</div>
+</section>
+<section class="row">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-6">
+			<img class="img-2" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/G_4Images.jpg') }}">
+		</div>
+		<div class="col-sm-">
+			<img class="img-2" alt="photo collage" src="{{ url_for('static', filename='images/photocollage/H_4_180209.jpg') }}">
+		</div>
+	</div>
+</section>
+</main>
+{% endblock %}

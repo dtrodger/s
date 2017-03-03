@@ -1,0 +1,30 @@
+{% extends "base/base.html" %}
+
+{% block style %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}" />
+{% endblock %}
+
+
+{% block content %}
+  <header class="row banner">
+    <div id="banner-text" class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
+      <h2><span>Stuart Rodgers is a high quality, full service photography studio  serviceing the Chicagoland area since 1945.</span></h2>
+    </div>
+  </header>
+   <div class="row">
+    <div class="col-xs-10 col-xs-offset-1">
+      <div id="school" class="service text-center col-sm-4 col-sm-offset-0 col-xs-10-col-xs-offset-1">
+         <a href="{{url_for('main.senior_products')}}"><img src="{{ url_for('static', filename='images/index/school.jpg')}}"></a>
+         <h2 class="text-center"><span>Schools</h2>
+      </div>
+      <div id="portrait" class="service text-center col-sm-4 col-sm-offset-0 col-xs-10-col-xs-offset-1">
+        <a href="{{url_for('main.portraits')}}"><img src="{{ url_for('static', filename='images/index/family.JPG')}}"></a>
+        <h2 class="text-center"><span>Portraits</span></h2>
+      </div>
+      <div id="commercial" class="service text-center col-sm-4 col-sm-offset-0 col-xs-10-col-xs-offset-1">
+        <a href="{{url_for('main.commercial')}}"><img src="{{ url_for('static', filename='images/index/corporate.jpg')}}"></a>
+        <h2 class="text-center"><span>Commercial</span></h2>
+      </div>
+    </div>
+    </div>
+{% endblock %}

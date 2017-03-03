@@ -1,0 +1,31 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contract_policies.css') }}" />
+{% endblock %}
+
+{% block content %}
+	{% include 'main/partials/policy_certificates.html' %}
+	<div class="col-sm-7 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		<div style="margin-top:20px;">			
+			<p align="center" style="font-size:120%;">
+				Certificate of Compliance With Illinois Drug-Free Workplace Act
+			</p>
+			<font size="2">
+				<br>
+				Stuart-Rodgers Ltd. , Contractor, having 25 employees, does hereby certify pursuant to the Illinois Drug-Free Workplace Act (30 ILCS 580) that (he, she, it) shall provide a drug—free workplace for all employees engaged in the performance of work under the contract by complying with the requirements of the Illinois Drug—Free Workplace Act and, further certify, that (he, she, it) is not ineligible for award of this contract by reason of debannent for a violation of the Illinois Drug—Free Workplace Act.<br>
+				<br>
+				Stuart-Rodgers Ltd.
+				<br>
+			</font>
+			<img border=0 width=192 height=62 src="{{ url_for('static', filename='images/contract/sr_signature.png') }}" v:shapes="_x0000_s1025">
+			<font size="2">
+				<br>
+				(Authorized Agent of Contractor)
+				<br>
+			</font>
+		</div>
+	</div>
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contract_policies.css') }}" />
+{% endblock %}
+
+{% block content %}
+	{% include 'main/partials/policy_certificates.html' %}
+	<div class="col-sm-7 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+			<div style="margin-top:20px;">			
+				<p align="center" style="font-size:120%;">Non-Collusion Affidavit</p>
+				<p>By submission of this bid or proposal, the bidder certifies that:</p>
+				<p>a) This bid or proposal has been independently arrived at without collusion with any other bidder or with any competitor or potential competitor;</p>
+				<p>b) This bid or proposal has not been knowingly disclosed and will not be knowingly disclosed, prior to the opening of bids or proposals for this project, to any other bidder, competitor, or potential competitor;</p>
+				<p>c) No attempt has been or will be made to induce any other person, partnership, or corporation to submit or not to submit a bid or proposal or to fix overhead, profit, or cost element of said bid price, or that of any other or to secure any advantage against the Housing Authority;</p>
+				<p>d) The person, signing this bid or proposal certifies that he has fully informed himself regarding the accuracy of the statements contained in this certification, and under the penalties of perjury, affirms the truth thereof, such penalties being applicable to the bidder as well as to the person signing in its behalf;</p>
+				<p>e) That attached hereto (if a corporate bidder) is a certified copy of the resolution authorizing the execution of this certificate by the signator of this bid or proposal in behalf of the corporate bidder.</p>
+				<p>Scott Rodgers, deposes and says that he is President of Stuart-Rodgers Ltd. the party making the foregoing proposal or bid for Photography Services, that such proposal or bid is genuine and not collusive and that all stats herein are true.</p>
+				<p>Signature:</p>
+				<br>
+				<img border=0 width=192 height=62 src="{{ url_for('static', filename='images/contract/sr_signature.png') }}">
+				<br>
+				Scott Rodgers
+				<br>
+				<p>President, Stuart-Rodgers Ltd.</p>
+			</div>
+		</div>
+	</div>
+	{% include 'base/footer.html' %}
+{% endblock %}

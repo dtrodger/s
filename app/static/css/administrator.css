@@ -1,0 +1,29 @@
+h1 {
+	font-size: 200%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+.different > li {
+	list-style: none;
+	font-size: 115%;
+}
+
+.admin-button {
+	color:black!important;
+}
+
+.admin-button-section {
+	margin-top:100px;
+	margin-bottom:100px;
+}
+
+#header{
+    width:100%; 
+}
+
+#headerContent{
+    margin: 0 auto; width: 1108px;
+}

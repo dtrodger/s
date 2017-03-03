@@ -1,0 +1,116 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/seniors.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    	<img class="img_stay" src="{{ url_for('static', filename='images/seniors/seniors2.jpg') }}"><img class="img_leave" src="{{ url_for('static', filename='images/seniors/seniors1.jpg') }}"><img class="img_stay" src="{{ url_for('static', filename='images/seniors/seniors3.jpg') }}">
+	</div>
+	
+	<div class="row" style="margin-top:40px;">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="col-xs-12">
+				<h2 class="text-center">
+					Yearbook Portrait Sessions
+				</h2>
+			</div>
+		</div>
+	</div>
+	<div class="row well">
+		<div class="col-xs-10 col-xs-offset-1">
+		<h3 class="text-center">Deluxe Session</a>
+		</h3>
+		<p>This is our most personalized and unique photo session offer. It allows more time and results in significantly more expressive and relaxed final images. Our Deluxe Sitting Includes:</p>
+		<ul>
+			<li>2{{ url_for('main.faq') }}-3 outfit changes and will be photographed at different locations in our studio or outside if the weather allows</li>
+			<li>You can also bring in special props, such as musical instruments, sports uniforms, pets or other items that reflect your unique interests and hobbies. *Pets are allowed at our studio locations only</li>
+			<li>60 - 100 images to choose from online of various compositions and styles</li>
+			<li>Up to 30 minutes with the photographer (If you do not bring in different outfits, your session may take less than 30 minutes)</li>
+			<li>Added variety and choices for your Yearbook poses</li>
+		</ul>
+		<p>The Deluxe Session provides you with the best service we offer. The variety of images, compositions and expressions will be greater and most importantly, the additional time will allow you to come away with images that truly reflect your personality and style. This is an important moment before heading off to college. Isn’t it worth taking a bit more time to document?</p>
+		<div class="text-center">
+			<a class="btn btn-default" href="{{ url_for('main.deluxe_session') }}">View Deluxe Sessions</a>
+		</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+				<h3 class="text-center">Standard Session</h3>
+				<p>With our Standard session, for a small sitting charge you will receive more time with the photographer which results in more proofs options and a more relaxed expression that reflects your personality. The most important part of these photographs is often the spark in your eyes and in a 5 minute Yearbook Session, it can be hard to create that feeling. By the time you get to know the photographer, the session will be over. The extra time allowed for a Standard Session will mean more life and spirit in your final images. With the Standard session you will also get:</p>
+				<ul>
+					<li>30 - 40 images to choose from online of various compositions and styles</li>
+					<li>10-15 minutes with the photographer</li>
+					<li>An outfit and background change for added variety</li>
+					<li>This is our most popular session option and is well worth the investment.</li>
+				</ul>
+				<div class="text-center">
+					<a class="btn btn-default" href="{{ url_for('main.standard_session') }}">View Standard Sessions</a>
+				</div>
+			</div>
+		</div>
+		<div class="row well">
+			<div class="col-xs-10 col-xs-offset-1">
+				<h3 class="text-center">Yearbook Session</h3>
+				<p>You will receive 9 head and shoulders images to choose from online with this session. These images will all be created on the background selected by your school. If you are not happy with these images and would like a resit, you will be required to book a Standard Session at the $40.00 rate (unless there is a mechanical error). Yearbook Sittings include:</p>
+				<ul>
+					<li>9 Yearbook images to choose from online</li>
+					<li>Up to 5 minutes with the photographer</li>
+				</ul>
+				<p>This basic session is quick and easy but may not provide the variety and expressive personality that the more extensive sessions create for you. This is an important milestone in your life and you will be heading off to your adult life soon. A bit more time and effort on this session may be worth your investment.</p>
+				<div class="text-center">
+					<a class="btn btn-default" href="{{ url_for('main.yearbook_session') }}">View Yearbook Sessions</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<h2 class="text-center">
+				Other Options
+			</h2>
+			<p>(Available in Addition to School Yearbook Portrait Session)</p>
+		</div>
+		<div class="col-xs-10 col-xs-offset-1">
+			<h3 class="text-center">Family Session</h3>
+			<p>When we photograph you as a senior, you are eligible for a free family sitting in the studio. Take this opportunity to record your family’s commitment to each other at this important time before your Senior heads off to College or their new life.</p>
+			<p>The Family Session includes:</p>
+			<ul>
+				<li>100+ images to choose from online</li>
+				<li>Up to one hour with the photographer</li>
+				<li>1-3 outfit changes</li>
+				<li>Our normal $150 photography session fee is waived since we 
+				did your senior portraits</li>
+			</ul>
+			<div class="text-center">
+				<a class="btn btn-default" href="{{ url_for('main.family_session') }}">View Family Sessions</a>
+			</div>
+		</div>
+	</div>
+		<div class="col-xs-10 col-xs-offset-1">
+			<h3 class="text-center">Location Session</h3>
+			<p>This session is the best we offer and includes a full hour with the photographer at any location of your choice. We can suggest some favorite outdoor settings or you may want to take the photos at your home or different spot you know about. These are all about working with our photographer to create something unique and timeless that reflects who you are as a young adult. These sessions reflect your personality and style. Since your school requires the same background for the yearbook, you will have to schedule one of the other sitting options in the studio in addition to this session.</p>
+			<p>With the Location Session you will receive:</p>
+			<ul>
+				<li>100+ images to choose from online</li>
+				<li>Your choice of photo session locations</li>
+				<li>Unlimited outfit and background changes</li>
+				<li>Up to one hour with the photographer</li>
+				<li>A session customized to you</li>
+			</ul>
+			<div class="text-center">
+				<a class="btn btn-default" href="{{ url_for('main.location_session') }}">View Location Sessions</a>
+			</div>
+		</div>
+	</div>
+		<div class="col-xs-12" style="margin-top: 50px">
+			<div class="text-center">
+				<a class="btn btn-default btn-lg" href="{{ url_for('main.faq') }}">Clothing Tips and General Questions</a>
+				<br>
+			</div>
+		</div>
+	</div>
+	{% include 'base/footer.html' %}
+{% endblock %}

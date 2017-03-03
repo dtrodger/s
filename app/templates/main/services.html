@@ -1,0 +1,54 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel='stylesheet' type='text/css' href='{{ url_for("static", filename="css/services.css") }}'>
+{% endblock %}
+
+{% block content %}
+ <main>
+  	<section class="row">
+  		<div class="col-xs-10 col-xs-offset-1">
+  			<h1 class="text-center">Services We Offer</h1>
+  			<div class="col-sm-4 text-center">
+				<a class="top-three btn btn-default btn-block" href="{{ url_for('main.commercial') }}">
+					<span class="glyphicon glyphicon-stats" style="font-size:1.5em;"></span>
+					 <br>
+					 Commercial
+				</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<a class="top-three btn btn-default btn-block" href="{{ url_for('main.dance') }}">
+					<span class="glyphicon glyphicon-camera" style="font-size:1.5em;"></span>
+					 <br>
+					 Dance
+				</a>
+			</div>
+			<div class="col-sm-4 text-center">
+				<a class="top-three btn btn-default btn-block" href="{{ url_for('main.portraits') }}">
+					<span class="glyphicon glyphicon-user" style="font-size:1.5em;"></span>
+					 <br>
+					 Portrait
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-sm-4 col-sm-offset-1 text-center">
+				<a class=" bottom-two btn btn-default btn-block" href="{{ url_for('main.seniors') }}">
+					<span class="glyphicon glyphicon-education" style="font-size:1.5em;"></span>
+					 <br>
+					 Schools
+				</a>
+			</div>
+			<div class="col-sm-4 col-sm-offset-2 text-center">
+				<a class="bottom-two btn btn-default btn-block" href="{{ url_for('main.sports') }}">
+					<span class="glyphicon glyphicon-star" style="font-size:1.5em;"></span>
+					 <br>
+					 Sports
+				</a>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock %}

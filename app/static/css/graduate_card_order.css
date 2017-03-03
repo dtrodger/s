@@ -1,0 +1,63 @@
+h3 {
+	font-size:120%;
+}
+
+h2 {
+	font-size: 150%;
+}
+
+.row {
+	padding:60px 0 60px 0;
+}
+
+.title {
+	display:inline-block;
+}
+
+.color {
+	height:80;
+	width:80;
+}
+
+@media screen and (min-width: 768px) {
+	.verticle-card {
+		height:283px;
+		width:130px;
+	}
+}
+
+@media screen and (min-width: 1201px) {
+	.horizontal-card{
+		width:300px;
+		height:171px;
+	}
+}
+
+@media screen and (min-width: 970px) (max-width: 1200px) {
+	.horizontal-card{
+		width:400px;
+		height:228px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.horizontal-card{
+		width:100%;
+	}
+	.verticle-card {
+		width:170px;
+	}
+}
+
+@media screen and (min-width:465px) {
+	.font {
+		width:150px;
+		height:50px;
+	}
+}
+
+@media screen and (max-width:464px) {
+	.font {
+		width:100%;
+	}
+}

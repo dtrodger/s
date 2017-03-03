@@ -1,0 +1,31 @@
+h3 {
+	font-size:170%!important;
+}
+
+@media screen and (max-width: 1033px) {
+	.img_stay {
+		width:40%;
+	}
+
+	.img_leave {
+		width: 19%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.img_stay {
+		width: 45%;
+	}
+
+	.img_leave {
+		visibility: hidden;
+		width: 0%;	}
+}
+
+@media screen and (max-width: 450px) {
+	.img_stay {
+		display:block;
+		width: 80%;
+		margin: 20px auto;
+	}
+}

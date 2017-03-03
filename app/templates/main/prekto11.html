@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+		<div class="col-xs-12">
+				<h2 class="text-center">
+					Yearbook Portrait Sessions
+				</h2>
+			</div>
+		</div>
+		<div class="col-sm-5 col-xs-offset-1">
+			<img border="0" src="{{ url_for('static', filename='images/kt011/kid.jpg') }}" width="360" height="216"></font></span>
+		</div>
+		<div class="col-sm-6">
+			<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+			<a class="btn-block btn btn-default btn-lg" href="{{ url_for('main.make_payment')}}">Make a Payment</a>
+			</div>
+			<br>
+			<div style="margin-top: 20px;" class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+			<a class="btn-block btn btn-default btn-lg" href="{{ url_for('main.underclass_preorder') }}">Underclass Preorder</a>
+			</div>
+			<div class="col-xs-12">
+			<p>Here is what you can always expect with a Picture Day by Stuart-Rodgers Photography pofessional photographers, pictures starting on-time, dependable service, smooth and easy process, organized shooting stations, bigger Rebates and excellent photo quality!</p>
+			</div>
+		</div>
+	</div>
+{% endblock %}

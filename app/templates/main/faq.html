@@ -1,0 +1,264 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/faq.css') }}" />
+{% endblock %}
+
+{% block script %}
+<script src="{{ url_for('static', filename='js/faq.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<div class='row'>
+    <div class='col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2'>
+      <div class="faqs">
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>General Questions</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>Our four locations are in Evanston, Chicago, Highland Park and Mount Propsect. For more information on our locations and hours, <a target="_top" href="{{ url_for('main.directions') }}">CLICK HERE</a>.</p>
+          <p>For information on services we provide, <a target="_top" href="{{ url_for('main.services') }}">CLICK HERE</a>.</p>
+          <p>We offer occasional lessons in photography. To inquire about a class, <a target="_top" href="{{ url_for('main.photo_class') }}">CLICK HERE</a>.</p>
+          <p>For pricing information, <a target="_top" href="http://www.srphoto.com/pricing2.htm">CLICK HERE</a>.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Scheduling</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>If you are a highschool senior with an appointment password and you would like to schedule a time for your sitting, confirm your sitting time or change your sitting time, <a target="_top" href="https://apps.srphoto.com/srsit.fwx">CLICK HERE</a>. If you are not a highschool senior and you want to inquire about scheduling a sitting, please email <a target="_top" href="mailto:info@srphoto.com">info@srphoto.com</a> or call 847-864-7322.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Senior Portraits</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>Proofs will be available online approximately 2 weeks after your photo sessions. A full set of printed proofs is available for a $10 fee. A printed proof of the yearbook pose we select will be mailed to your home. You will not be able to enter your online gallery or view your proofs if there is any balance due on your account.</p>
+          <p>Retouching options are available and listed on the order form and online gallery in the list of products. Retouching is available for the yearbook pose but must be ordered by the deadline listed on the order form and in the online gallery. Dates are subject to change based on your school's yearbook deadline. We highly recommend making changes early to avoid last minute complications.</p>
+          <p><a target="_top" href="https://apps.srphoto.com/srsit.fwx">CLICK HERE</a> to enter your password to access your online gallery. Once inside your gallery, you can choose the picture from your sitting that will be included in your yearbook.</p>
+          <br>
+          <p><a target="_top" href="{{ url_for('main.seniors') }}">SESSION TYPE INFORMATION</a></p>
+          <p><a target="_top" href="{{ url_for('main.senior_products') }}">PRODUCT INFORMATION</a></p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Individual and Family Sittings</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>Proofs will be available online in approximately 1 week after your photo sessions. A full set of printed proofs is available for a $75 fee. A set of our favorite poses will be printed as proofs and mailed to your home. You will not be able to enter your online gallery or view your proofs if there is any balance due on your account.</p>
+          <p><a target="_top" href="{{ url_for('main.request_info') }}">CLICK HERE</a> for inquiries concerning fees, products and pricing.</p>
+          <br>
+          <p>Family and personal portrait samples are available for viewing <a target="_top" href="{{ url_for('main.portraits') }}">HERE</a> if you would like further visual ideas.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Commercial Sitting</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>For a description of the commercial photography services we provide, <a target="_top" href="{{ url_for('main.commercial') }}">CLICK HERE</a>.</p>
+          <p>For pricing information, <a target="_top" href="{{ url_for('main.request_info') }}">CLICK HERE</a> and click 'Other' in the 'Type of Photograph' checklist.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Order Photos</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>To access your galary and place an order, <a target="_top" href="{{ url_for('main.enter_password') }}">CLICK HERE</a>.</p>
+          <p>To receive your photos, you can pick them up in Evanston or request them to be shipped by USPS or FedEx. Normal processing time for print orders is 2-3 weeks. Normal processing for orders turned in on Picture Day is 4-6 weeks. If you have an issue with your order, please email info@srphoto.com or call 847-864-7322. We offer multiple options for expiditing your order (1-2 Days = $35, 3-5 Days = $20, 7-10 Days = $10). You may request a background change for a fee of $50 per pose. When you enter an online gallery, there is an option in the upper right corner to click 'Other Galleries'. That tab will allow you to enter multiple galleries and combine more than one student on an order.</p>
+          <p>Packages that include more than one pose will indicate the total number of poses allowed in the online gallery. The number will be listed in the column titled 'Poses'. When a package offers more than one pose, the prints will be split evenly between the poses. If a package or ala carte item lists (-) as the number of poses, only 1 pose is allowed. No exceptions.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>School Event Candids</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>For information on event candids, <a target="_top" href="{{ url_for('main.school_event_photos') }}">CLICK HERE</a>.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Clothing Suggestions</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p><strong>Clothing Suggestions for making the session successful</strong></p>
+          <p>We want to work with you to create beautiful and relaxed photographs of you and/or your group.  If you have any questions about the session please call either of our offices and we would be happy to discuss your thoughts and plan ahead with you.  Listed here are a few basic suggestions regarding clothing and session planning. We look forward to working with you.</p>
+          <br>
+          <p>General Thoughts:</p>
+          <br>
+          <ul>
+            <li>Relax, this will be a fun experience.</li>
+            <li>View some sample sessions from the links at the left for ideas.</li>
+            <li>Call if you have any questions.</li>
+            <li>Dark colors are slimming, light colors are not.</li>
+            <li>We suggest clothing with no pattern or design that can distract the eye from the subject and draw
+             attention.</li>
+            <li>Do not get a hair cut for your appointment. It is best to have done so a week or two prior to.</li>
+            <li>Dress from head to toe. If you do not we will be limited in what we can do creatively.</li>
+            <li>It is best to remove a watch from the wrist.</li>
+          </ul>
+          <br>
+          <p>Suggestions for Women:</p>
+          <br>
+          <ul>
+           <li>Shirts should be a solid color and at least 3/4 length sleeves. Necklines should be at a respectable length.</li>
+            <li>Normal makeup, our lights do not need extra makeup.</li>
+            <li>Have nicely manicured fingernails (and toe nails for more casual portraits)</li>
+          </ul>
+          <br>
+          <p>Suggestions for Men:</p>
+          <br>
+          <ul>
+            <li>A fresh shave is a must! schedule your appointment as early in the day as possible.</li>
+            <li>Ties with a subtle pattern are okay.</li>
+            <li>Shirts should be a solid color and long sleeves are best. Shirts that offer a buttoned collar should be
+           fastened.</li>
+            <li>Jackets should be solid color and fit properly.</li>
+          </ul>
+          <br>
+         <p> Clothing for Groups:</p>
+          <br>
+          <ul>
+            <li>For groups of 3 or more, select 1-3 colors (keeping them all solid). One of the colors should be a neutral
+           such as khaki, white, black, jeans (something everyone can incorporate in their ensemble). Veer away
+           from everyone wearing the same thing. People should show their individuality while still blending with the
+           group.</li>
+            <li>Try to stay away from too much white.</li>
+          </ul>
+          <br>
+          <p>Clothing for Children:</p>
+          <br>
+          <p>Girls</p>
+          <br>
+          <ul>
+            <li>Dresses for little girls should not be straight and tight at the hem line. This will not work well
+           for seated portraits. </li>
+            <li>It is best to have flowing and billowing dresses that will cover the legs.</li>
+            <li>Bows should be subtle in a solid color.</li>
+            <li>Try to avoid short collars on dresses and shirts. They often come out of place, not laying
+           properly in various poses other than standing.</li>
+           </ul>
+           <br>
+          <p>Boys</p>
+          <br>
+          <ul>
+            <li>Pants should fit a little on the longer side if possible. Once the child is sitting the pants look too
+           short.</li>
+            <li>Undershirts should fit properly underneath sweaters.</li>
+          </ul>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>General Inquiries</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p>For all other questions, please fill out our online form <a target="_top" href="{{ url_for('main.request_info') }}">HERE</a>, email <a target="_top" href="mailto:info@srphoto.com">info@srphoto.com</a> or call 847-864-7322.</p>
+          </div>
+        </div>
+        <br>
+        <button>
+          <h2 class="question"><i class='glyphicon glyphicon-chevron-right'></i>Guarantees and Policies</h2>
+        </button>
+        <div class="answer">
+          <hr>
+          <div class="well">
+          <p><strong>Return Policy</strong></p>
+          <p>If you are unsatisfied with your product in any way, return it for a full credit.</p>
+
+          <p><strong>Shipping Policy</strong></p>
+          <p>We ship via Federal Express (trackable) and USPS (non-trackable).  Some products are also available for pickup in our Evanston office.</p>
+
+          <p><strong>Privacy Policy</strong></p>
+          <p>This privacy policy sets out how Stuart-Rodgers Ltd. uses and protects any information that you give Stuart-Rodgers Ltd.  when you use this website.</p>
+
+          <p>Stuart-Rodgers Ltd. is committed to ensuring that your privacy is protected. Should we ask you to provide certain information by which you can be identified when using this website, then you can be assured that it will only be used in accordance with this privacy statement.</p>
+
+          <p>Stuart-Rodgers Ltd. may change this policy from time to time by updating this page. You should check this page from time to time to ensure that you are happy with any changes. This policy is effective from January 1, 2011.</p>
+
+          <p><strong>What We Collect</strong></p>
+          <p>We may collect the following information:</p>
+          <ul>
+            <li>Name and job title</li>
+
+            <li>Contact information including email address</li>
+
+            <li>Demographic information such as postcode, preferences and interests</li>
+
+            <li>Other information relevant to customer surveys and/or offers</li>
+          </ul>
+
+          <p><strong>What we do With the Information we Gather</strong></p>
+          <p>We require this information to understand your needs and provide you with a better service, and in particular for the following reasons:</p>
+          <ul>
+            <li>Internal record keeping.</li>
+
+            <li>We may use the information to improve our products and services.</li>
+
+            <li>We may periodically send promotional emails about new products, special offers or other information which we think you may find interesting using the email address which you have provided.</li>
+
+            <li>From time to time, we may also use your information to contact you for market research purposes. We may contact you by email, phone, fax or mail. We may use the information to customize the website according to your interests.</li>
+          </ul>
+
+          <p><strong>Security</strong></p>
+          <p>We are committed to ensuring that your information is secure. In order to prevent unauthorized access or disclosure, we have put in place suitable physical, electronic and managerial procedures to safeguard and secure the information we collect online.</p>
+
+          <p><strong>How we use Cookies</strong></p>
+          <p>A cookie is a small file which asks permission to be placed on your computer's hard drive. Once you agree, the file is added and the cookie helps analyze web traffic or lets you know when you visit a particular site. Cookies allow web applications to respond to you as an individual. The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences.</p>
+
+          <p>We use traffic log cookies to identify which pages are being used. This helps us analyse data about webpage traffic and improve our website in order to tailor it to customer needs. We only use this information for statistical analysis purposes and then the data is removed from the system.</p>
+
+          <p>Overall, cookies help us provide you with a better website by enabling us to monitor which pages you find useful and which you do not. A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us.</p>
+
+          <p>You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website.</p>
+
+          <p><strong>Links to Other Websites</strong></p>
+          <p>Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy statement. You should exercise caution and look at the privacy statement applicable to the website in question.</p>
+
+          <p><strong>Controlling your Personal Information</strong></p>
+          <p>You may choose to restrict the collection or use of your personal information in the following ways:</p>
+          <ul>
+
+            <li>Whenever you are asked to fill in a form on the website, look for the box that you can click to indicate that you do not want the information to be used by anybody for direct marketing purposes.</li>
+
+            <li>If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by writing to or emailing us at info@srphoto.com/</li>
+          </ul>
+
+          <p>We will not sell, distribute or lease your personal information to third parties unless we have your permission or are required by law to do so. We may use your personal information to send you promotional information about third parties which we think you may find interesting if you tell us that you wish this to happen.</p>
+
+          <p>You may request details of personal information which we hold about you under the Data Protection Act 1998. A small fee will be payable. If you would like a copy of the information held on you please write to Stuart-Rodgers Ltd, 2504 Green Bay Road, Evanston, Illinois 60201.</p>
+
+          <p>Refunds or order changes are not available for any digital file or digital download.</p>
+
+          <p>If you believe that any information we are holding on you is incorrect or incomplete, please write to or email us as soon as possible at the above address. We will promptly correct any information found to be incorrect.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  {% include 'base/footer.html' %}
+{% endblock %}

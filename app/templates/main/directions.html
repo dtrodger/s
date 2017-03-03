@@ -1,0 +1,73 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/directions.css') }}" />
+{% endblock %}
+
+{% block script %}
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrh7OCXK4Ajpf-QXcNqfQhxJ93SPbN9ng&callback=initMap" async defer></script>
+
+	<script src="{{ url_for('static', filename='js/google_maps.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+<main>
+	<section class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-sm-6 col-sm-offset-0">
+				<h2>Evanston</h2>
+				<hr>
+				<img border="0" src="{{ url_for('static', filename='images/directions/evanston.jpg') }}" width="300" height="220">
+				<br>
+				<h3>Corporate Office and Labs</h3>
+				<p>Address: 2504 Green Bay Road, Evanston, Illinois 60201</p>
+				<p>Phone Number: 847-864-7322</p>
+				<p>Hours of Operation:</p>
+				<p>Monday-Friday: 9:00AM-5:00PM - Saturday: 9:00AM-1:00PM</p>
+				<br>
+				<a href="https://www.google.com/maps/dir//2504+Green+Bay+Rd,+Evanston,+IL+60201/@42.062785,-87.7001057,17z/data=!4m16!1m7!3m6!1s0x880fc552d6f5ca4d:0x76b684efe738eed0!2s2504+Green+Bay+Rd,+Evanston,+IL+60201!3b1!8m2!3d42.062785!4d-87.697917!4m7!1m0!1m5!1m1!1s0x880fc552d6f5ca4d:0x76b684efe738eed0!2m2!1d-87.697917!2d42.062785"><strong>Directions</strong></a>
+			</div>
+			<div class="col-sm-6 col-sm-offset-0">
+				<div id="evanston_map"></div>
+			</div>
+		</div>
+	</section>
+	<section class="row well welld">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-sm-6 col-sm-offset-0">
+				<h2>Highland Park</h2>
+				<hr>
+				<img border="0" src="{{ url_for('static', filename='images/directions/hp_office.jpg') }}" width="300" height="205">
+				<br>
+				<p>Address: 474 Central Avenue Suite 203/204, Highland Park, Illinois 60035</p>
+				<p>Hours of Operation:</p>
+				<p>Open by Appointment</p>
+				<br>
+				<a href="https://www.google.com/maps/dir//474+Central+Ave,+Highland+Park,+IL+60035/@42.1859176,-87.7995279,17z/data=!4m16!1m7!3m6!1s0x880fc1bd366e2579:0x8745b9a729b21abf!2s474+Central+Ave,+Highland+Park,+IL+60035!3b1!8m2!3d42.1859176!4d-87.7973392!4m7!1m0!1m5!1m1!1s0x880fc1bd366e2579:0x8745b9a729b21abf!2m2!1d-87.7973392!2d42.1859176"><strong>Directions</strong></a>
+			</div>
+			<div class="col-sm-6 col-sm-offset-0">
+				<div id="hp_map"></div>
+			</div>
+		</div>
+	</section>
+	<section class="row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-sm-6 col-sm-offset-0">
+				<h2>Chicago</h2>
+				<hr>
+				<img border="0" src="{{ url_for('static', filename='images/directions/chi_office.jpg') }}" width="300" height="220">
+				<br>
+				<p>Address: 375 West Erie - Street level, Chicago, Illinois 60654</p>
+				<p>Hours of Operation:</p>
+				<p>Open by Appointment</p>
+				<br>
+				<a href="https://www.google.com/maps/dir//375+W+Erie+St,+Chicago,+IL+60654/@41.8937448,-87.6411753,17z/data=!4m16!1m7!3m6!1s0x880e2ccaefcb5973:0x89526b4118481bbe!2s375+W+Erie+St,+Chicago,+IL+60654!3b1!8m2!3d41.8937448!4d-87.6389866!4m7!1m0!1m5!1m1!1s0x880e2ccaefcb5973:0x89526b4118481bbe!2m2!1d-87.6389866!2d41.8937448"><strong>Directions</strong></a>
+			</div>
+			<div class="col-sm-6 col-sm-offset-0">
+				<div id="chi_map"></div>
+			</div>
+		</div>
+	</section>
+</main>
+{% include 'base/footer.html' %}
+{% endblock %}

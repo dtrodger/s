@@ -1,0 +1,35 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel='stylesheet' type='text/css' href="{{ url_for('static', filename='css/history.css') }}">
+{% endblock %}
+
+{% block content %}
+ <main>
+  	<section class="row">
+  		<div class="col-xs-10 col-xs-offset-1">
+			<h1 class="text-center">Our History</h1>
+			<p>Stuart-Rodgers Photography was founded by Betty Stuart who began her career in photography in 1942 while attending the Medill School of Journalism at Northwestern University. Facing supply and equipment challenges during the end of the Depression and World War II, Betty Stuart Photography became a successful business specializing in people and event photography.</p>
+			<p>Portraits and weddings were the primary focus of her work with a new and unique emphasis in a natural and photojournalist style. In 1946 Betty’s husband John Boyd Rodgers joined the company and Stuart-Rodgers Photography was born.</p>
+			<p>Over the years the business grew to include school, dance, sports, corporate and commercial photography.</p>
+			<p>Today Stuart-Rodgers Photography is a nationally known leader in quality, personalized photography bringing a unique style and commitments to the industry.</p>
+		</div>
+	</section>
+	<section class="row pic-row">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="col-sm-4 text-center">
+				<img class="building" src="{{ url_for('static', filename='images/history/SRbuilding1962.jpg') }}">
+				<p>Our Evanston Office - 1962</p>
+			</div>
+			<div class="col-sm-4 text-center">
+				<img class="betty-buck" src="{{ url_for('static', filename='images/history/BettyandBuck1945.jpg') }}">
+				<p>Buck Betty Rodgers - 1945</p>
+			</div>
+			<div class="col-sm-4 text-center">			
+      			<img class="betty" src="{{ url_for('static', filename='images/history/betty1943.jpg') }}">
+				<p>Betty Rodgers - 1943</p>
+			</div>
+		</div>
+	</section>
+	{% include 'base/footer.html' %}
+{% endblock %}

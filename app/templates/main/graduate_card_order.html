@@ -1,0 +1,236 @@
+{% extends 'base/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/graduate_card_order.css') }}" />
+{% endblock %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1>Graduate Card Order Form</h1>
+      <p>*Card examples are bellow the form</p>
+      {{ wtf.quick_form(form) }}
+      <br />
+    </div>
+  </div>
+  </div>
+      <section class="row well">
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="{{ url_for('static', filename='images/graduate_card_order/A_resize.jpg') }}">
+          <h3>Layout A</h3>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="
+          {{ url_for('static', filename='images/graduate_card_order/B_resize.jpg') }}">
+          <h3>Layout B</h3>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="{{ url_for('static', filename='images/graduate_card_order/C_resize.jpg') }}">
+          <h3>Layout C</h3>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="{{ url_for('static', filename='images/graduate_card_order/D_resize.jpg') }}"">
+          <h3>Layout D</h3>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="{{ url_for('static', filename='images/graduate_card_order/E_resize.jpg') }}"">
+          <h3>Layout E</h3>
+        </div>
+        <div class="col-md-2 col-sm-4">
+          <img class="verticle-card" src="{{ url_for('static', filename='images/graduate_card_order/F_resize.jpg') }}"><p>
+          <h3>Layout F</h3>
+        </div>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <div class="col-lg-4 text-center">
+          <img class="horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/G_resize.jpg') }}">
+          <h3>Layout G</h3>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="2 horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/H_resize.jpg') }}"">
+          <h3>Layout H</h3>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/I_resize.jpg') }}"">
+          <h3>Layout I</h3>
+        </div>
+      </div>
+    </section>
+    <section class="row well">
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <div class="col-lg-4 text-center">
+          <img class="2 horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/J_resize.jpg') }}"">
+          <h3>Layout J</h3>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/K_resize.jpg') }}"">
+          <h3>Layout K</h3>
+        </div>
+        <div class="col-lg-4 text-center">
+          <img class="2 horizontal-card" src="{{ url_for('static', filename='images/graduate_card_order/L_resize.jpg') }}"">
+          <h3>Layout L</h3>
+        </div>
+      </div>
+    </section>
+    <section class="row">
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <h2 id="title">Font Choices</h2>
+        <br>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Algerian_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Amazone_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Aparajita_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Bradley_Hand_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Brush_Script_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Candara_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Century_Gothic_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Chaparral_Pro_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Corbel_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Coronet_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Desdemona_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Eccentric_STD_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Edwardian_Script_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Fifth_Ave_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Footlight_MT_Light_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Futura_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Impact_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Kino_MT_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Minion_Pro_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Optima_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/ProvLite_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Segoe_Script_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Sirona_resize.jpg') }}">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="font" src="{{ url_for('static', filename='images/graduate_card_order/Technical_resize.jpg') }}">
+        </div>
+      </div>
+    </section>
+        <section class="row well">
+      <div class="col-xs-10 col-xs-offset-1 text-center">
+        <h2 id="title">Background Color Choices</h2>
+        <br>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Black_resize.jpg') }}">
+          <h3>Black</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Blue_resize.jpg') }}">
+          <h3>Blue</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Brown_resize.jpg') }}">
+          <h3>Brown</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Coral_resize.jpg') }}">
+          <h3>Coral</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Blue_resize.jpg') }}">
+          <h3>Dark Blue</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Dark_Green_resize.jpg') }}">
+          <h3>Dark Green</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Gold_resize.jpg') }}">
+          <h3>Gold</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Grey_resize.jpg') }}">
+          <h3>Grey</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Blue_resize.jpg') }}">
+          <h3>Light Blue</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Light_Green_resize.jpg') }}">
+          <h3>Light Green</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Maroon_resize.jpg') }}">
+          <h3>Maroon</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Orange_resize.jpg') }}">
+          <h3>Orange</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Purple_resize.jpg') }}">
+          <h3>Purple</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Red_resize.jpg') }}">
+          <h3>Red</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Royal_Blue_resize.jpg') }}">
+          <h3>Royal Blue</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Tan_Texture_resize.jpg') }}">
+          <h3>Tan Texture</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/White_resize.jpg') }}">
+          <h3>White</h3>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+          <img class="color" src="{{ url_for('static', filename='images/graduate_card_order/Yellow_resize.jpg') }}">
+          <h3>Yellow</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+{% endblock %}

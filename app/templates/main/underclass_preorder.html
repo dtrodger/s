@@ -1,0 +1,135 @@
+{% extends 'base/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block content %}
+<div class="col-md-6 col-md-offset-3">
+    <h1>Underclass Preorder Form</h1>
+    <form method="post">
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	School
+    	<br>
+    	{{ form.school }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Student Name
+    	<br>
+    	{{ form.student_name }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Grade
+    	<br>
+    	{{ form.grade }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Home Room
+    	<br>
+    	{{ form.homeroom }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Sport Name
+    	<br>
+    	{{ form.sport_name }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Jersey Number
+    	<br>
+    	{{ form.jersey_number }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Level
+    	<br>
+    	{{ form.level }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Parent Name
+    	<br>
+    	{{ form.parent_name }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Address
+    	<br>
+    	{{ form.address }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	City
+    	<br>
+    	{{ form.city }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	State
+    	<br>
+    	{{ form.state }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Zip Code
+    	<br>
+    	{{ form.zipcode }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Phone Number
+    	<br>
+    	{{ form.phone }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Email
+    	<br>
+    	{{ form.email }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Card Type
+    	<br>
+    	{{ form.card_type }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Verification Co
+    	<br>
+    	{{ form.verification_code }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 1
+    	<br>
+    	{{ form.item_1 }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 1 Price
+    	<br>
+    	{{ form.item_1_price }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 2
+    	<br>
+    	{{ form.item_2 }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 2 Price
+    	<br>
+    	{{ form.item_2_price }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 3
+    	<br>
+    	{{ form.item_3 }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 3 Price
+    	<br>
+    	{{ form.item_3_price }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 4
+    	<br>
+    	{{ form.item_4 }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	Item 4 Price
+    	<br>
+    	{{ form.item_4_price }}
+    	</div>
+    	<div class="text-center col-lg-3 col-sm-4 col-xs-6">
+    	{{ form.submit }}
+    	</div>
+    </form>
+    <br />
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}

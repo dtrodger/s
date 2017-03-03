@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+	<main>
+  		<section class="row">
+  			<div class="col-xs-10 col-xs-offset-1">
+  				<div class="col-lg-10 col-lg-offset-1">
+	  				<h1 class="text-center">Sports</h1>
+	  				<p>From smooth, trouble free photo days to professional back end support to excellent quality images and photo novelties; our team is committed to providing you with the best photography and service available.</p>
+					<ul>
+						<li>Competitive pricing</li>
+						<li>Excellent photography</li>
+						<li>Local in-house lab</li>
+						<li>Experience and attention to detail</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section class="row well welld">
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/1.jpg') }}" width="216" height="324">
+			</div>
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/2.jpg') }}" width="216" height="324">
+			</div>
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/3.jpg') }}" width="216" height="324">
+			</div>
+		</section>
+		<section class="row">
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/4.jpg') }}" width="216" height="324">
+			</div>
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/5.jpg') }}" width="216" height="324">
+			</div>
+			<div class="col-sm-4 text-center">
+				<img border="0" src="{{ url_for('static', filename='images/sports/6.jpg') }}" width="216" height="324">
+			</div>
+		</section>
+	</main>
+	{% include 'base/footer.html' %}
+{% endblock %}

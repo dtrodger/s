@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/commercial.css') }}">
+{% endblock %}
+
+{% block content %}
+ <main>
+	<section class="row">
+		<div class="col-md-5 col-xs-10 col-xs-offset-1">
+			<h1 class="text-center">Commercial Photography</h1>
+			<p>In over 70 years in the photography business we have been chosen by thousands of the world's leading large and small companies to handle their most sensitive "must have" photographs.</p>
+			<p>They have been confident that we will produce the image they need . . . within budget, on time, and creatively executed.</p>
+			<p>Our client list includes national and international firms that require the professional creative touch that only our team can offer. Clients understand that we always maintain a commitment to being on the cutting edge of our field while "delivering the goods" when it matters most.</p>
+			<p>At our firm's beginning, we were pioneers in journalistic candid photography. In the late 1950's we had the first color lab in the Midwest. During the '60's and '70's, we sponsored seminars by leaders in our field like Ansel Adams and W. Eugene Smith. Currently, we invest in state-of-the-art computer digital imaging technology and training to keep up with the latest trends in the delivery of our evolving craft.</p>
+			<p>When the image matters most, Stuart-Rodgers Photography is the first choice.</p>
+			<div class="col-xs-10 col-xs-offset-1">
+				<a class="btn btn-default btn-block" href="{{ url_for('main.request_info') }}">Request Information</a>
+			</div>
+		</div>
+		<div class="col-md-5 col-sm-10 col-sm-offset-1 col-xs-12">
+  			<h2 class="text-center">View Sample Galleries</h2>
+			<div class="gallery col-xs-8 col-xs-offset-2">
+				<a class="btn btn-block btn-default" href="images/Commercial%20Flash%20Galleries/Comm_Event/events_gallery.htm"><span>Events</span></a>
+			</div>
+			<div class="gallery col-xs-8 col-xs-offset-2">
+				<a class="btn btn-block btn-default" href="images/Commercial%20Flash%20Galleries/Comm_loc/index.html"><span>Location Work</span></a>
+			</div>
+			<div class="gallery col-xs-8 col-xs-offset-2">
+				<a class="btn btn-block btn-default" href="images/Commercial%20Flash%20Galleries/Comm_HS/index.html"><span>Studio Work</span></a>
+			</div>
+			<div class="gallery col-xs-8 col-xs-offset-2">
+				<a class="btn btn-block btn-default" href="images/Commercial%20Flash%20Galleries/Comm_int/index.html"><span>Interiors</span></a>
+			</div>
+			<br>
+		</div>
+	</section>
+</main>
+{% include 'base/footer.html' %}
+{% endblock %}

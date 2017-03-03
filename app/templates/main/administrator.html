@@ -1,0 +1,48 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/administrator.css') }}" />
+{% endblock %}
+
+{% block content %}
+	<section>
+	<div id="header">
+		<div class="text-center" id="headerContent">
+			<img border="0" src="{{ url_for('static', filename='images/administrator/admin1.jpg') }}"><img border="0" src="{{ url_for('static', filename='images/administrator/admin3.jpg') }}"><img border="0" src="{{ url_for('static', filename='images/administrator/admin2.jpg') }}">
+		</div>
+	</div>			
+	<div class="row admin-button-section">
+		<div class="col-sm-4 col-sm-offset-1 col-xs-10 col-xs-offset-1 text-center">
+			<a class="admin-button text-responsive btn btn-block btn-lg btn-default" href="{{ url_for('main.interested_school') }}">
+				 <span class="glyphicon glyphicon-plus" style="font-size:1.5em;"></span>
+				 <br>
+				 Contact a Representative
+			</a>
+		</div>
+		<div class="col-sm-4 col-sm-offset-2 col-xs-10 col-xs-offset-1 text-center">
+			<a class="admin-button text-responsive btn btn-block btn-lg btn-default" href="{{ url_for('main.retained_school') }}">
+				<span class="glyphicon glyphicon-home" style="font-size:1.5em;"></span>
+				<br>
+				Account Login
+			</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 text-center well">
+			<h1>Why Stuart-Rodgers Photography Stands Out</h1>
+			<ul class="different">
+				<li>Honesty</li>
+				<li>Professionalism</li>
+				<li>Follow Through</li>
+				<li>Commitment</li>
+				<li>Local Chicago Company</li>
+				<li>Quick Response</li>
+				<li>Consistency</li>
+				<li>65 Years in the Chicago area</li>
+				<li>Technology that works for you</li>
+			</ul>
+		</div>
+	</div>
+	</section>
+	{% include 'base/footer.html' %}
+{% endblock %}

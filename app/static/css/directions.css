@@ -1,0 +1,35 @@
+h3 {
+	font-size:120%;
+}
+
+img {
+	margin-bottom:15px;
+}
+
+.welld {
+    margin:50px 0 50px 0;
+    padding:50px 0 50px 0;
+}
+
+#evanston_map, #hp_map, #chi_map, #mp_map {
+    width: 100%;
+    height: 400px;
+  }
+
+#evanston_map {
+	margin-top: 40px;
+}
+
+@media screen and (max-width: 767px){
+	#evanston_map, #hp_map, #chi_map, #mp_map {
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 415px){
+	img {
+		width:100%;
+	}
+}
+

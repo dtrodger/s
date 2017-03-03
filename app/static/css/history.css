@@ -1,0 +1,49 @@
+h1 {
+	font-size:2em;
+}
+
+.building {
+	width:200px;
+}
+
+.betty-buck {
+	width:200px;
+}
+
+.pic-row {
+	margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+	.betty-buck {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.betty-buck {
+		width: 65%;
+	}
+
+	.building {
+		width: 65%;
+	}
+
+	.betty {
+		width: 65%;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	.betty-buck {
+		width: 90%;
+	}
+
+	.building {
+		width: 90%;
+	}
+
+	.betty {
+		width: 90%;
+	}
+}

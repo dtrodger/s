@@ -1,0 +1,126 @@
+{% extends 'base/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block style %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/administrator.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div style="margin-bottom:30px;" class="row">
+			<div class="col-md-6 col-md-offset-3">
+    			<h1>Request Information</h1>
+    			{{ wtf.quick_form(form) }}
+    			<br />
+			</div>
+		</div>
+
+			<div class="row well">
+				<div class="col-xs-12 text-center">
+					<h1>Why Switch to Staurt-Rodgers?</h1>
+					<ul class="different">
+						<li>Smooth Picture Day</li>
+						<li>Dependable - On Time Package Delivery</li>
+						<li>Higher Rebates</li>
+						<li>High Quality Photography</li>
+						<li>Outstanding Customer Service</li>
+						<li>24/7 Administration Access</li>
+						<li>Online Ordering</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 text-center">
+				<h1>References</h1>
+					<div class="col-md-3">
+						<p>"This is our first year using Stuart-Rodgers Photography for our photos. We have been delighted with the quality of the pictures, the products that are offered and the outstanding and prompt service they provide"</p>
+						<br>
+						<p>Ann Carra, Athletic Department Specialist</p>
+		  				<p>Evanston Township High School</p>
+		  				<br>
+		  			</div>
+		  			<div class="col-md-3">
+						<p>"Stuart Rodgers did a phenomenal job communicating with our seniors during portrait scheduling. In fact, they were so thorough that we wound up having 127 more seniors photographed than in prior years (when we had another vendor)."</p>
+						<br>
+						<p>Renee Scott, (TITLE)</p>
+		  				<p>Niles North High School</p>
+		  				<br>
+		  			</div>
+		  			<div class="col-md-3">
+						<p>"Because of their high quality service and pictures, Stuart-Rodgers has been our team photographer for years. Their flexibility and professionalism make it an easy choice for the Loyola Academy Football program with three teams and over 250 players."</p>
+						<br>
+						<p>John Holecek, Head Football Coach</p>
+		  				<p>Loyola Academy</p>
+		  				<br>
+		  			</div>
+		  			<div class="col-md-3">
+						<p>"It was very kind of you to send out more photographers and do a second photo set up. I know this goes well beyond the inclusions in our initial contract and will bring additional costs your way. This is just another example of your commitment to Sears School and your excellent customer service. Thank you again for going above and beyond."</p>
+						<br>
+						<p>Heidi (LAST NAME), (TITLE)</p>
+		  				<p>Joseph Sears School</p>
+		  				<br>
+		  			</div>
+		  		</div>
+	  		</div>
+	  	<!-- 	<div style="margin-bottom:30px;" class="row well">
+				<div class="col-sm-6 text-center">
+					<h1>Portrait Services</h1>
+					<ul class="different">
+						<li>Fall Picture Day</li>
+						<li>Senior Portraits</li>
+						<li>Spring Environmentals</li>
+						<li>Sport and Club Photos</li>
+						<li>Communion Portraits</li>
+						<li>Class Photos & Composites</li>
+						<li>Special Events</li>
+						<li>ID Card / Registration Days</li>
+						<li>Kid's Safety</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 text-center">
+					<h1>School Activities, Sports and Special Events</h1>
+					<ul class="different">
+						<li>Panoramas</li>
+						<li>Graduations</li>
+						<li>Prom</li>
+						<li>Orchestra</li>
+						<li>Dances</li>
+						<li>Team & Individual</li>
+						<li>Candid Photography</li>
+					</ul>
+				</div>
+			</div>
+			<div style="margin-bottom:30px;" class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+				<div class="col-sm-6">
+					<h1>Student Safety Programs</h1>
+					<p>The safety of students is a high priority for our organization.  We have committed to a strong and comprehensive program.</p>
+					<p>We work closely with law enforcement to provide a 24/7 response when needed.  Day or night, if a child is missing, parents can contact us and request a portrait be provided to law enforcement to aid in search efforts.</p>
+					<p>Upon request, we will provide complimentary ID cards for each student photographed, even if the family does not purchase portraits.  Our images are also available to be used on missing children's posters.</p>
+					<p>We are committed to being there for children in need.</p>
+				</div>
+				<div class="col-sm-6">
+					<h1>Yearbook and Classbook Printing</h1>
+					<p>Desktop program - Our easy to use program gives you control over your yearbook.</p>
+					<p>Online design - The entire design staff can collaborate online.  Click here to view a sample of the book design software that we offer with them.</p>
+					<p>Binding and finishing - A variety of covers and bindings are available.</p>
+					<p>Pricing - Competitive pricing for this important school fundraiser.</p>
+					<p>Printing - There are many printing options for yearbooks that range from purchasing an in-house digital short run printer to contracting with local printers.  We collaborate with the company we feel provides the highest quality of photo and image reproduction in the US.</p>
+				</div>
+			</div>
+			</div>
+			<div class="row well">
+				<div class="col-sm-10 col-sm-offset-1">
+					<h1>What We Offer Your Seniors</h1>
+					<p>We never ask students to smile but instead, our staff is trained to interact empathetically with the students to capture relaxed and genuine expressions.  A key photographic concept for us that appears in some of our marketing materials is, “We don’t ask you to smile when we take your photograph because we are always there to capture it when you do.</p>
+					<p>We mail a detailed brochure to each senior during the spring or summer explaining the timelines, clothing sug We handle scheduling of all senior appointments at the convenience of the students from our offices.</p>
+					<p>Online senior proofing and ordering is available.  While we provide every student with a proof set on photographic paper because of it’s superior quality and ease of handling and selection, online proofing is available as requested.</p>
+					<p>We provide periodic updates to the school about who has been photographed and / or scheduled.</p>
+					<p>We offer black and white or color package options.</p>
+    				<p>We use full time photographers in order to create consistent results.</p>
+    				<p>Our offices and labs are locally based for more effective parent customer service.</p>
+    				<p>We offer discounted packages for families with special financial needs.</p>
+				</div>
+			</div> -->
+	</main>
+	{% include 'base/footer.html' %}
+{% endblock %}

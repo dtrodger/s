@@ -1,0 +1,97 @@
+#request_info {
+	margin-top: 40px;
+}
+
+#cd {
+	border-radius: 60%;
+	width:250px;
+}
+
+h2 {
+	font-size:150%;
+}
+
+h3 {
+	font-size:110%;
+}
+
+hr {
+	visibility: hidden;
+}
+
+.photo-collage-pic {
+		width:280px;
+		position: relative;
+		top: 30px;
+	}
+
+.graduation-cards-pic {
+		width:140px;
+		position: relative;
+		top: 30px;
+	}
+
+.frame-pic {
+	width:275px;
+	position: relative;
+	top:40px;
+}
+
+
+@media screen and (max-width: 995px) {
+	.graduation-cards-pic {
+		width:180px;
+	}
+
+	.photo-collage-pic {
+		width:220px;
+		top:10px;
+	}
+
+	.collage {
+		position: relative;
+		left: 25px;
+	}
+
+@media screen and (max-width: 767px) {
+	.collage {
+		position: relative;
+		left: 0;
+		top:20px;
+	}
+
+	.photo-collage-pic {
+		width:280px;
+	}
+}
+
+@media screen and (max-width: 385px) {
+	.photo-collage-pic {
+		width:200px;
+		right:20px;
+		}
+
+	.frame-pic {
+		width:100%;
+	}
+
+	.graduation-cards-pic {
+		right:20px;
+	}
+
+	#cd {
+		width:130px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.frame-row {
+		margin-top:40px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.retouch-pic {
+		width:100%;
+	}
+}

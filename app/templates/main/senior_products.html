@@ -1,0 +1,120 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/senior_products.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4">
+		<a id="request_info" class="btn btn-lg btn-default btn-block" href="{{url_for('main.request_info')}}">Request Information</a>
+	</div>
+</div>
+<div class="row" style="margin-top:80px;">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-6">
+			<div class="col-sm-6">
+				<h2>Graduation Cards</h2>
+				<p>4" x 8.75" Cards.<br>Perfect for graduation announcements or invitations. Cards are custom designed and printed on our finest quality photographic paper. Choose from 4 different designs.</p>
+				<br>
+				<a class="text-responsive btn btn-default" href="{{ url_for('main.graduate_card_order') }}"><strong>Order Online</strong></a>
+			</div>
+			<div class="col-sm-6 text-center">
+				<a href="graduationcards.htm">
+					<img class="graduation-cards-pic" src="{{ url_for('static', filename='images/senior_products/card.jpg') }}">
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-6 collage">
+			<div class="col-md-6">
+				<h2>Photo Collages</h2>
+				<p>Photo Collage Prints are an opportunity to choose more than one image and have them designed on one piece of photographic paper. Order any size print and add a set-up fee (based on the number of poses you want to add) to create a custom designed flatmat.</p>
+				<br>
+				<a class="text-responsive btn btn-default" href="{{ url_for('main.photo_collage') }}">
+					<strong>Collage Examples</strong>
+				</a>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="photo-collage-pic" src="{{ url_for('static', filename='images/senior_products/student1.jpg') }}">
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row well" style="margin-top:80px;padding:80px 0 80px 0;">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-12 col-md-6">
+			<div class="col-sm-6">
+				<h2>Custom Frame Options</h2>
+				<p>Our frame options are a great way for you to display your portraits. You can choose a black, silver, wood or gold frame, and four matte color options to frame one portrait or multiple poses. These include glass and come to you ready to hang on your wall. Click to view our frame options.</p>
+				<br>
+			</div>
+			<div class="col-md-6 text-center">
+				<img class="frame-pic" src="{{ url_for('static', filename='images/senior_products/frame1.jpg') }}">
+			</div>
+		</div>
+		<div class="col-xs-12 col-md-5 col-md-offset-1 frame-row">
+			<div class="row" style="margin-top:20px;">
+				<div class="col-xs-6 text-center">
+					<h3>Mat Options</h3>
+					<p>Black, White, Antique Tan, and White with a bevel edge.</p>
+				</div>
+				<div class="col-xs-6 text-center">
+					<h3>Frame Options</h3>
+					<p>Black, Silver, Wood, and Gold</p>
+				</div>
+			</div>
+			<div class="row" style="margin-top:20px;">
+				<div class="col-xs-6 text-center">
+					<img border="0" src="{{ url_for('static', filename='images/senior_products/mattes.jpg') }}" width="120" height="120">
+				</div>
+				<div class="col-xs-6 text-center">
+					<img border="0" src="{{ url_for('static', filename='images/senior_products/frames.jpg') }}" width="120" height="120">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row" style="margin-top:80px;">
+	<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+		<h2>Retouching</h2>
+		<p>It is common to require some retouching on your portraits. We offer different levels of retouching to accommodate your needs. Retouching options include:</p>
+		<br>
+		<ul>
+			<li>Basic Retouching - includes blemishes, shine, and under eye retouching</li>
+			<li>Premium Retouching - includes blemishes, under eye, shine and stray hairs and/or glass glare removal</li>
+			<li>Braces - includes all of the above as needed or requested and brace removal.  This is done in a natural way for the best results</li>
+			<li>Other - is by quote.  This could include scar removal, thinning a face or other more complicated requests</li>
+		</ul>
+		<br>
+		<p>Please contact us at 877-307-0762 with your specific request.</p>
+	</div>
+</div>
+<div class="row" style="margin-top:80px;">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-xs-6 text-center">
+			<img class="retouch-pic" src="{{ url_for('static', filename='images/senior_products/braces_before.jpg') }}">
+			<br>
+			<p>No Retouching</p>
+		</div>
+		<div class="col-xs-6 text-center">
+			<img class="retouch-pic" src="{{ url_for('static', filename='images/senior_products/braces_after.jpg') }}">
+			<br>
+			<p>Basic and Braces Retouching</p>
+		</div>
+	</div>
+</div>
+<div class="row well" style="margin-top:80px;padding:80px 0 80px 0;">
+	<div class="col-xs-10 col-xs-offset-1">
+		<div class="col-sm-6">
+			<h2>Digital Files</h2>
+			<p>Low Res images emailed, text, CD - for use on Ipod/Facebook/Phone/Screensaver (288 x 432 @72 dpi)</p>
+			<br>
+			<p>High Res images on CD - these are printable images with a copyright release (2400 x 3600 @ 300 dpi)</p>
+		</div>
+		<div class="col-sm-6 text-center">
+			<img id="cd" src="{{ url_for('static', filename='images/senior_products/cd.jpg') }}">
+		</div>
+	</div>
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}

@@ -1,0 +1,64 @@
+<nav class="navbar navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="nav-img navbar-brand" href="/"><img style="width:220px; height:37px; margin-top:10px;" src="{{ url_for('static', filename='images/base/sr_web_logo.jpg')}}" width="270" height="58"></a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+           <li class="dropdown">
+            <a href="{{ url_for('main.enter_password') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Order Photos</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.enter_password') }}">Enter Password</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.underclass_preorder') }}">Underclass Preorder</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.school_event_photos') }}">School Event Photos</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.admin_access') }}">Download</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.make_payment') }}">Make Payment</a></li>
+            </ul>
+          </li>
+          <li><A HREF="https://apps.srphoto.com/srsit.fwx" TARGET="" STYLE="{text-decoration: none;}">Schedule Me</A></li>
+          <li class="dropdown">
+            <a href="https://apps.srphoto.com/srsit.fwx" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Schools</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.administrator') }}">Administrators</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.seniors') }}">Seniors</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.prekto11')}}">Pre-k - 11th Grade</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.senior_products')}}">Products</a></li>
+            </ul>
+          </li>
+        <!--   <li class="dropdown">
+            <A HREF="{{ url_for('main.portraits') }}" TARGET="" STYLE="{text-decoration: none;}">Portraits</A>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-nav-item" href="{{ url_for('main.portraits') }}">Products</a></li>
+                <li><a class="dropdown-nav-item" href="{{ url_for('main.request_info') }}">Request Information</a></li>
+            </ul>
+          </li> -->
+          <li class="dropdown">
+            <a href="{{ url_for('main.services') }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.commercial') }}">Commercial</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.seniors') }}">Seniors</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.portraits') }}">Potraits</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.sports') }}">Sports</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.dance') }}">Dance</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="http://108.233.6.22/Dev/help1.htm" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.faq') }}">FAQ</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.request_info') }}">Request Information</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.remove') }}">Remove Me</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.directions') }}">Directions</a></li>
+              <li><a class="dropdown-nav-item" href="{{ url_for('main.history') }}">History</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

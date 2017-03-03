@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Karla:400,400i,700);
+
+/** {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  }
+
+body {
+  height: 100%;
+  font-family: "Karla", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+*/
+/*a:link, a:visited {
+  color: gray;
+  transition: 0.3s all ease-in;
+}*/
+
+a:hover {
+  color: black;
+}
+
+.service {
+  height: 300px;
+}
+
+/*eader {
+  z-index: 2;
+  position: relative;
+  height: 100%;
+  background: url("../images/index/corporate.jpg") no-repeat scroll center;
+  background-size: cover;
+  background-blend-mode: soft light;
+}
+
+header .greeting {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #373737;
+  opacity: 0.6;
+  }
+
+header h1 {
+  position: relative;
+  z-index: 2;
+  top: 30%;
+  margin: 0;
+  color: #FFF;
+  font-family: Karla, sans-serif;
+  font-size: 3em;
+  line-height: 1.5;
+  }
+
+header hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  width: 70%;
+}
+
+.footer {
+  z-index: 2;
+}*/
+
+/*header .overlay {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#ccc center no-repeat;
+  background-size: cover;
+   opacity: 0.5;  -webkit-filter: blur(4px);
+}*/
+
+/*nav {
+  z-index: 4;
+  position: absolute;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: white;
+  clear: both;
+  }
+
+span {
+  color: #F5F5F5;
+}
+
+  nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 15px;
+  }
+
+  nav a {
+    z-index: 4;
+    color: #ccc;
+    font-size: 1.3em;
+    text-decoration: none;
+    transition: 0.3s all ease-in;
+    }
+
+    nav a:hover {
+      color: black;
+      }
+*/

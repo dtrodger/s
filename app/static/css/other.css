@@ -1,0 +1,17 @@
+.top-btn {
+	margin-top:55px;
+}
+
+.main-btn {
+	margin-top:20px;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+@media screen and (max-width: 1300px) {
+	.daily-pic {
+		width: 100%
+	}
+}

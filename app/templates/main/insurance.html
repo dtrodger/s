@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contract_policies.css') }}" />
+{% endblock %}
+
+{% block content %}
+	{% include 'main/partials/policy_certificates.html' %}
+	<div class="col-sm-7 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		<div style="margin-top:20px;">
+			<p align="center" style="font-size:120%;">Proof of Insurance</p>			
+			<img border="0" src="{{ url_for('static', filename='images/contract/insurance.jpg') }}" width="627" height="804">
+		</div>
+	</div>
+	{% include 'base/footer.html' %}
+{% endblock %}

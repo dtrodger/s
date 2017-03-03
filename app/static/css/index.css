@@ -1,0 +1,56 @@
+
+
+header {
+/*  z-index: 2;*/
+/*  position: relative;*/
+  height: 100%;
+  background: url("../images/index/banner2.jpg") no-repeat scroll center;
+  background-size: cover;
+  background-blend-mode: soft light;
+  margin-bottom:20px;
+}
+
+
+img {
+	width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+	header {
+	/*  z-index: 2;*/
+	/*  position: relative;*/
+	  height: 30%;
+	  background: none;
+	  margin-bottom:20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	img {
+		width:235px;
+		margin:auto;
+	}
+}
+
+.service {
+	position: relative;
+}
+
+#banner-text {
+	margin: 0px 15px;
+	top: 100px;
+}
+
+/*h2 { 
+   position: absolute;
+   bottom: -99px;
+}
+
+h2 span { 
+   color: white; 
+   font: 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}*/

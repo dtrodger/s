@@ -1,0 +1,42 @@
+{% extends 'base/base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/administrator.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/contract_policies.css') }}" />
+{% endblock %}
+
+{% block content %}
+<div class="row">
+	{% include 'main/partials/policy_certificates.html' %}
+	<div class="col-sm-7 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+		<h1>Electronic Contract</h1>
+
+		<p>Stuart-Rodgers Photography agrees to perform the services as outlined in our prior agreement and the school agrees that Stuart-Rodgers Photography will act as the exclusive photographer for all of the events.</p>
+
+		<p>Stuart-Rodgers Photography shall indemnify, keep and save harmless the School, its agents, officials, and employees, against all injuries, deaths, losses, damages, claims, suits, liabilities, judgments, and expenses, which may in any way accrue against the School in consequence of the granting of this contract, or which may result through the negligence or omission of the Contractor of his employees. The Contractor shall, at his own expense, defend and pay all charges of attorneys and all costs and expenses arising in connection therewith.</p>
+
+		<p>The contractor shall be obliged to comply with all obligations of law pertaining to the performance of its work.</p>
+
+		<p>Stuart-Rodgers Ltd. Guarantees to meet all terms as specified in this agreement.</p>
+		<p>Agreed by: </p>
+		<img border=0 width=192 height=62 src="{{ url_for('static', filename='images/contract/sr_signature.png') }}" v:shapes="_x0000_s1025">
+		<p>Scott Rodgers</p>
+		<p>President </p>
+		<p>Stuart-Rodgers Ltd.</p>
+		<p>2504 Greenbay Road</p>
+		<p>Evanston, Illinois 60201</p>
+		<p>847-864-7322</p>
+		<a style="color: blue; text-decoration: underline; text-underline: single" href="mailto:scott@srphoto.com">
+		scott@srphoto.com</a>
+	</div>
+</div>
+<div class="row">
+	<div class="col-sm-4 col-sm-offset-4 col-xs-10 col-xs-offset-1">
+		<hr>
+		{{ wtf.quick_form(form) }}
+		<br />
+	</div>
+</div>
+{% include 'base/footer.html' %}
+{% endblock %}
